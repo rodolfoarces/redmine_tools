@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  redmine:
+    image: redmine
+    env_file: "./redmine.env"
+    restart: always
+    ports:
+      - "13000:3000"
